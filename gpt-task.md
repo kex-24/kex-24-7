@@ -1,90 +1,87 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Customize Your Own Virtual Garage
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+For this programming task, we'll explore the same core programming concepts from the model task, such as designing classes, working with fields, methods, constructors, and encapsulation in Java. Instead of mythical creatures, you're going to create a virtual garage full of customized cars. This is a fantastic way to practice object-oriented programming while building something you can relate to.
 
 ## Deadline
-This assignment is due before the next scheduled class.
+Please submit this task before the next scheduled class.
 
-## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+## Instructions for Submission
+Refer to the course instructions for the details on how to submit this assignment.
 
 ## Preparation
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
+- Ensure you've gone through Module 2: Looking Inside Classes
+- Review any relevant materials in the OLI platform
 
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
-
-## Learning Goals
-
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+Learning Goals
+The objectives for this week include:
+- Creating and using Java classes
+- Working with instance fields and methods
+- Employing constructors for object creation
+- Implementing getters and setters for data encapsulation
+- Utilizing the `main` method effectively
+- Understanding scope and variable shadowing
 
 ## Troubleshooting Guide
+If you encounter difficulties:
+1. Consult the Q&A section of the course forum.
+2. Post a new question if yours hasn't been addressed yet.
+3. Reach out to a helper during our scheduled lab sessions for real-time assistance.
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+## Assignment Overview
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+In your virtual garage, you will model custom cars with various attributes. Each car will be represented as an object in Java. As we move through the tasks, you'll refine your implementation, from directly manipulating object fields to using more sophisticated techniques like encapsulation.
 
-## Assignment Details
+### Exercise 1: Setting Up Your Garage
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+Start by creating a Java file named `Car.java`. This file will contain the `Car` class, the blueprint for your custom cars.
 
-### Task 1: Class Creation
+Define the `Car` class with the following fields (but do not assign values yet):
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+- `String` model
+- `int` maxSpeed
+- `String` color
+- `boolean` isConvertible
 
-### Task 2: Defining Properties
+Now, in the main method, create your first custom car object. After that, directly assign values to its fields.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+### Exercise 2: Adding More Cars
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+Let's add two more cars to your garage. Try manually creating new car objects and setting their fields. Reflect on the limitations of doing this as your garage grows in size.
 
-### Task 3: Spawning Galaxy Pets
+### Exercise 3: Accessorizing with Getters and Setters
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+To better manage your cars' attributes, convert your fields to `private` and implement getters and setters for each field. Use these methods to set and get field values.
 
-### Task 4: Encapsulation with Getters and Setters
+### Exercise 4: Speedy Constructors
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+Writing a constructor for your Car class will streamline the process of creating new car instances. Write a constructor that allows you to specify a car's attributes when you create a new car object.
 
-### Task 5: Constructing with Constructors
+### Exercise 5: Fill Your Garage
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+Using your constructor, populate your garage with at least 3 distinctly configured cars.
 
-### Task 6: Display Information
+### Exercise 6: Display Your Collection
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+Implement a `printInfo()` method in the Car class that neatly displays a car's attributes. Call this method for each car in your garage.
 
-### Task 7: The Cosmic Challenge
+### Exercise 7: Refueling Your Cars
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+Finally, add a behavior to your cars. Implement a `refuel()` method that resets your car's fuel level. Simulate a scenario where one of your cars needs refueling, demonstrate the method's effectiveness in the main method.
 
-### Task 8: Understanding Scope and Shadowing
+### Exercise 8: Understanding Variable Shadowing
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+Review examples of variable shadowing to understand how local and global variables can interact. Specifically, explore how the `this` keyword can be used to distinguish between class fields and parameters with the same name.
 
-## Final Checklist
+## Checklist
+- Did you create a `Car` class with specified fields?
+- Have you implemented getter and setter methods?
+- Did you write a constructor for easy car object creation?
+- Are you able to add cars to your garage using the constructor?
+- Can you print car information with the `printInfo()` method?
+- Have you added and demonstrated a `refuel()` behavior?
+- Did you review and understand variable shadowing?
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
+## Found an Issue?
 
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+If you discover any inconsistencies or errors in this task, please report them by creating a new issue with a descriptive title. Your contributions help improve the course for everyone.
